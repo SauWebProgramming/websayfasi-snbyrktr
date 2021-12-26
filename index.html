@@ -47,7 +47,7 @@
                 <a class="nav-link active" href="#gallery">GALLERY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#map">MAPS</a>
+                <a class="nav-link active" href="#maps" target="_blank">MAPS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#communication">COMMUNICATION</a>
@@ -59,9 +59,65 @@
       </nav>
 
     <!--menü bitis-->
+<!--breadcrumbs b-->
+<head>
+  <title>Breadcrumbs</title>
+  
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <style>
+.breadcrumbs{
+  padding: 10px;
+  font-family: sans-serif;
+}
+.breadcrumbs__item{
+display: inline-block;
+}
+.breadcrumbs__item:not(:last-of-type)::after{
+  content: '/';
+  margin: 0 5px;
+  color: hotpink;
+}
+.breadcrumbs__link{
+  text-decoration: rgb(34, 39, 44);
+  color: hotpink;
+}
+.breadcrumbs__link:hover{
+  text-decoration: underline;
+}
+.breadcrumbs__link--active
+{
+color: hotpink;
+font-weight: 500;
+}
+  </style>
+</head>
+<body>
+  <ul class="breadcrumbs"> 
+    <li class="breadcrumbs__item">
+<a href="breadcrumbs__link">Home</a>
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="breadcrumbs__link">Movies</a>
+
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="breadcrumbs__link">Gallery</a>
+
+    </li>
+    <li class="breadcrumbs__item">
+      <a href="breadcrumbs__link breadcrumbs__link--active">Maps</a>
+
+    </li>
+  </ul>
+</body>
+<!--breadcrumbs b-->
+
 
     <!--slider başlangıcı-->
-
+     <hr id="home">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -95,6 +151,7 @@
 
 
     <!--history başlangıc-->
+
 <section class="p-5 text-center history">
 
   <div style="background-color: lightpink;" class="container">
@@ -363,61 +420,61 @@
       </div>
     </section>
     <!--gallery bitis-->
-    <!--map baslangic-->
-    <section class="p-5 text-center gallery">
-      <div style="background-color: rgb(169, 211, 238) ;"class="container">
-        <hr id="maps">
-        <h2 style="color: rgb(247, 148, 163);"class="mb-3 font-weight-bold">Maps</h2>
-    <img src="https://img.icons8.com/color/48/000000/disney-logo.png"/>
+     <!--map baslangic-->
+<section class="p-5 text-center gallery">
+  <div style="background-color: rgb(169, 211, 238) ;"class="container">
+    <hr id="maps">
+    <h2 style="color: rgb(247, 148, 163);"class="mb-3 font-weight-bold">Maps</h2>
+<img src="https://img.icons8.com/color/48/000000/disney-logo.png"/>
 
-    <div class="row">
-      <div class="col-sm-6">
-        <hr id="map">
-        <div class="card">
-          <div class="card-body">
-            <img src="img/d_hkong1.jpg" class="card-img-top" alt="...">
-            <h5 class="card-title"></h5>
-            
-            <a href="https://www.google.com/maps/dir/Sakarya/Hong+Kong+Disneyland,+Lantau+Island,+Hong+Kong/@30.2508427,54.0411522,4z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb2fad58e639f:0xb84f12f8c14f1221!2m2!1d30.3948169!2d40.7730743!1m5!1m1!1s0x3403fc2f53d3953d:0x35b3af6ce4475405!2m2!1d114.0412819!2d22.3129666!3e4?hl=tr" target="_blank" class="btn btn-primary">Go HONG KONG!</a>
-          </div>
-        </div>
+<div class="row">
+  <div class="col-sm-6">
+    <hr id="map">
+    <div class="card">
+      <div class="card-body">
+        <img src="img/d_hkong1.jpg" class="card-img-top" alt="...">
+        <h5 class="card-title"></h5>
+        
+        <a href="https://www.google.com/maps/dir/Sakarya/Hong+Kong+Disneyland,+Lantau+Island,+Hong+Kong/@30.2508427,54.0411522,4z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb2fad58e639f:0xb84f12f8c14f1221!2m2!1d30.3948169!2d40.7730743!1m5!1m1!1s0x3403fc2f53d3953d:0x35b3af6ce4475405!2m2!1d114.0412819!2d22.3129666!3e4?hl=tr" target="_blank" class="btn btn-primary">Go HONG KONG!</a>
       </div>
-      <div class="col-sm-6">
-        <hr id="map">
-        <div class="card">
-          <div class="card-body">
-            <img src="img/d_la.jpg" class="card-img-top" alt="...">
-            <h5 class="card-title"></h5>
-            
-            <a href="https://www.google.com/maps/dir/Sakarya/Disneyland,+1313+Disneyland+Dr,+Anaheim,+CA+92802,+Amerika+Birle%C5%9Fik+Devletleri/@31.4124286,-80.3218299,3z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb5169652181b:0xeba807a5c78d9201!2m2!1d30.4357631!2d40.6939973!1m5!1m1!1s0x80dcd7d12b3b5e6b:0x2ef62f8418225cfa!2m2!1d-117.9189742!2d33.8120918!3e4?hl=tr" target="_blank" class="btn btn-primary">Go LOS ANGELES!</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <hr id="map">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/d_florida.jpg" class="card-img-top" alt="...">
-              <h5 class="card-title"></h5>
-              
-              <a href="https://www.google.com/maps/dir/Sakarya/Walt+Disney+World+Resort,+Orlando,+FL,+Amerika+Birle%C5%9Fik+Devletleri/@28.8445977,-62.5411832,3z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb2fad58e639f:0xb84f12f8c14f1221!2m2!1d30.3948169!2d40.7730743!1m5!1m1!1s0x88dd7ee634caa5f7:0xa71e391fd01cf1a0!2m2!1d-81.57074!2d28.3771857!3e4?hl=tr" target="_blank" class="btn btn-primary">Go ORLANDO!</a>
-            </div>
-          </div>
-        </div>
-          <div class="col-sm-6">
-            <hr id="map">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/D_paris.jpg" class="card-img-top" alt="...">
-                <h5 class="card-title"></h5>
-                
-                <a href="https://www.google.com/maps/dir/Sakarya/Disneyland+Paris,+Bd+de+Parc,+77700+Coupvray,+Fransa/@44.4270388,7.6248871,5z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb5169652181b:0xeba807a5c78d9201!2m2!1d30.4357631!2d40.6939973!1m5!1m1!1s0x47e61d19ca7ae2bd:0x57faf8cb6310e660!2m2!1d2.783593!2d48.8673858!3e4?hl=tr" target="_blank" class="btn btn-primary">Go PARIS!</a>
-              </div>
-            </div>
-          </div>
     </div>
-    <!--map bitis-->
+  </div>
+  <div class="col-sm-6">
+    <hr id="map">
+    <div class="card">
+      <div class="card-body">
+        <img src="img/d_la.jpg" class="card-img-top" alt="...">
+        <h5 class="card-title"></h5>
+        
+        <a href="https://www.google.com/maps/dir/Sakarya/Disneyland,+1313+Disneyland+Dr,+Anaheim,+CA+92802,+Amerika+Birle%C5%9Fik+Devletleri/@31.4124286,-80.3218299,3z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb5169652181b:0xeba807a5c78d9201!2m2!1d30.4357631!2d40.6939973!1m5!1m1!1s0x80dcd7d12b3b5e6b:0x2ef62f8418225cfa!2m2!1d-117.9189742!2d33.8120918!3e4?hl=tr" target="_blank" class="btn btn-primary">Go LOS ANGELES!</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <hr id="map">
+      <div class="card">
+        <div class="card-body">
+          <img src="img/d_florida.jpg" class="card-img-top" alt="...">
+          <h5 class="card-title"></h5>
+          
+          <a href="https://www.google.com/maps/dir/Sakarya/Walt+Disney+World+Resort,+Orlando,+FL,+Amerika+Birle%C5%9Fik+Devletleri/@28.8445977,-62.5411832,3z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb2fad58e639f:0xb84f12f8c14f1221!2m2!1d30.3948169!2d40.7730743!1m5!1m1!1s0x88dd7ee634caa5f7:0xa71e391fd01cf1a0!2m2!1d-81.57074!2d28.3771857!3e4?hl=tr" target="_blank" class="btn btn-primary">Go ORLANDO!</a>
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6">
+        <hr id="map">
+        <div class="card">
+          <div class="card-body">
+            <img src="img/D_paris.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title"></h5>
+            
+            <a href="https://www.google.com/maps/dir/Sakarya/Disneyland+Paris,+Bd+de+Parc,+77700+Coupvray,+Fransa/@44.4270388,7.6248871,5z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x14ccb5169652181b:0xeba807a5c78d9201!2m2!1d30.4357631!2d40.6939973!1m5!1m1!1s0x47e61d19ca7ae2bd:0x57faf8cb6310e660!2m2!1d2.783593!2d48.8673858!3e4?hl=tr" target="_blank" class="btn btn-primary">Go PARIS!</a>
+          </div>
+        </div>
+      </div>
+</div>
+<!--map bitis-->
     <!--communication başlangıc -->
     <section class="p-5 text-center gallery">
       <div style="background-color: rgb(169, 211, 238) ;"class="container">
@@ -469,3 +526,5 @@
       
 </body>
 </html>
+
+
